@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:fitness_pad/screens/rutine.dart';
 
 class Trainning extends StatefulWidget {
-  const Trainning({super.key});
+  final Function update;
+  const Trainning({super.key, required this.update});
 
   @override
   State<Trainning> createState() => _TrainningState();
